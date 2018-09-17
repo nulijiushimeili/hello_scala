@@ -6,7 +6,7 @@ package scala1
 //在类名后面加上小(),就代表是这个类的构造函数
 //构造函数的参数可以使用val,var,修饰,也可以不修饰,如果不使用修饰符,默认是使用的是val修饰(最好还是写上修饰符)
 //这个是主构造器
-class StructDemo(val name:String, var age:Int, var faceValue:Int=90){
+class StructDemo(val name:String, var age:Int, faceValue:Int=90){
   var gender:String = _
   //踩过的坑:带有返回值的函数一定要注意返回值类型,编译器经常会直接设置返回值类型是unit,导致函数无法正常接收返回值
   def getFaceValue: Int ={
