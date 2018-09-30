@@ -11,7 +11,7 @@ class ScalaSingleton private {
 }
 
 object ScalaSingleton {
-  var instant: ScalaSingleton = null
+  private var instant: ScalaSingleton = null
 
   def apply():ScalaSingleton ={
     if (instant == null) instant = new ScalaSingleton
