@@ -13,7 +13,7 @@ class ApplyTest {
 
 // object 下的成员默认都是静态的
 object ApplyTest {
-  def apply() = {
+  def apply() :ApplyTest= {
     println("object ApplyTest--apply()...")
     new ApplyTest()
   }
